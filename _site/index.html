@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>My blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/jekyll-clean/js/jquery.min.js"></script>
-    <script src="/jekyll-clean/js/bootstrap.min.js"></script>
-    <link href="/jekyll-clean/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/jekyll-clean/css/theme.css" rel="stylesheet" type="text/css">
-    <link href="/jekyll-clean/css/syntax.css" rel="stylesheet" type="text/css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/syntax.css" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -26,15 +26,15 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/jekyll-clean/">My blog</a>
+                <a class="navbar-brand" href="/">My blog</a>
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/jekyll-clean/">Home</a></li>
-                    <li class="active visible-xs-block"><a href="/jekyll-clean/links.html">Links</a></li>
-                    <li class="active"><a href="/jekyll-clean/archive.html">Archive</a></li>
-                    <li class="active"><a href="/jekyll-clean/about.html">About</a></li>
-                    <li class="active"><a href="/jekyll-clean/feed.xml">RSS</a></li>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
+                    <li class="active"><a href="/archive.html">Archive</a></li>
+                    <li class="active"><a href="/about.html">About</a></li>
+                    <li class="active"><a href="/feed.xml">RSS</a></li>
                     
                       <li class="active"><a href="https://github.com/scotte/jekyll-clean">Github</a></li>
                     
@@ -48,44 +48,91 @@
 <div class="container container-left">
     <div class="row">
         <div class="col-md-3 hidden-xs">
-            <div class="sidebar well">
-A jekyll theme
-</div>
+            
 
 <div class="sidebar well">
     <h1>Recent Posts</h1>
     <ul>
         
-          <li><a href="/jekyll-clean/2014/08/jekyll-clean-theme">Jekyll Clean Theme</a></li>
+          <li><a href="/2017/06/my-first">老张的第一个blog</a></li>
         
-          <li><a href="/jekyll-clean/2014/07/Lorem-ipsum-dolor-sit-amet">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="/2014/08/jekyll-clean-theme">Jekyll Clean Theme</a></li>
         
-          <li><a href="/jekyll-clean/2014/06/Maecenas-feugiat-fringilla-nibh">Maecenas feugiat fringilla nibh</a></li>
+          <li><a href="/2014/07/Lorem-ipsum-dolor-sit-amet">Lorem ipsum dolor sit amet</a></li>
         
-          <li><a href="/jekyll-clean/2013/06/Cum-sociis-natoque-penatibus">Cum sociis natoque penatibus</a></li>
+          <li><a href="/2014/06/Maecenas-feugiat-fringilla-nibh">Maecenas feugiat fringilla nibh</a></li>
         
-          <li><a href="/jekyll-clean/2013/05/Nulla-vel-risus-dapibus">Nulla vel risus dapibus</a></li>
+          <li><a href="/2013/06/Cum-sociis-natoque-penatibus">Cum sociis natoque penatibus</a></li>
         
     </ul>
 </div>
 
-<div class="sidebar well">
-<h1>Links</h1>
-<ul>
-  <li><a href="#">One</a></li>
-  <li><a href="#">Two</a></li>
-  <li><a href="#">Three</a></li>
-  <li><a href="#">Four</a></li>
-</ul>
 
-</div>
 
         </div>
         <div class="col-md-9">
             
 <div class="article">
     <div class="well">
-        <h1><a href="/jekyll-clean/2014/08/jekyll-clean-theme">Aug 23, 2014 - Jekyll Clean Theme</a></h1>
+        <h1><a href="/2017/06/my-first">Jun 3, 2017 - 老张的第一个blog</a></h1>
+        
+        <div class="content">
+            <h5 id="1-验证指定id的签章">1. 验证指定ID的签章</h5>
+<ol>
+  <li>请求地址：http://xxx.com/ecs/open/verifyESealByID.jspa</li>
+  <li>请求方式：POST</li>
+  <li>请求参数：</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">参数名</th>
+      <th style="text-align: center">类型</th>
+      <th style="text-align: right">是否必需</th>
+      <th style="text-align: right">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">strFileData</td>
+      <td style="text-align: center">String</td>
+      <td style="text-align: right">Y</td>
+      <td style="text-align: right">待盖章的PDF文档的Base64数据</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">strESealID</td>
+      <td style="text-align: center">String</td>
+      <td style="text-align: right">Y</td>
+      <td style="text-align: right">签章ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>4.返回结果</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="nt">"meta"</span><span class="p">:{</span><span class="w">
+	        </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+           </span><span class="nt">"message"</span><span class="p">:</span><span class="s2">"操作成功"</span><span class="w">
+	 </span><span class="p">}</span><span class="w"> 
+	 </span><span class="s2">"data"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+	        </span><span class="nt">"签章id"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="err">//验证失败</span><span class="w"> 
+       </span><span class="err">}</span><span class="w">
+	 
+	 
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class="well">
+        <h1><a href="/2014/08/jekyll-clean-theme">Aug 23, 2014 - Jekyll Clean Theme</a></h1>
         
         <div class="content">
             <ul>
@@ -251,7 +298,7 @@ documentation for more details.</p>
 <h1 id="license">License</h1>
 
 <p>The content of this theme is distributed and licensed under a
-<img src="/jekyll-clean/images/cc_by_88x31.png" alt="License Badge" />
+<img src="/images/cc_by_88x31.png" alt="License Badge" />
 <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 License</a></p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>This license lets others distribute, remix, tweak, and build upon your work,
@@ -282,7 +329,7 @@ respective owners:</p>
 
 <div class="article">
     <div class="well">
-        <h1><a href="/jekyll-clean/2014/07/Lorem-ipsum-dolor-sit-amet">Jul 23, 2014 - Lorem ipsum dolor sit amet</a></h1>
+        <h1><a href="/2014/07/Lorem-ipsum-dolor-sit-amet">Jul 23, 2014 - Lorem ipsum dolor sit amet</a></h1>
         
             
         
@@ -297,29 +344,12 @@ respective owners:</p>
     </div>
 </div>
 
-<div class="article">
-    <div class="well">
-        <h1><a href="/jekyll-clean/2014/06/Maecenas-feugiat-fringilla-nibh">Jun 23, 2014 - Maecenas feugiat fringilla nibh</a></h1>
-        
-            
-        
-        <div class="content">
-            <p>Maecenas feugiat fringilla nibh ut mattis. Sed non metus sit amet mi luctus feugiat in quis sem. Vivamus pulvinar commodo bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas sapien nulla, eleifend in dolor et, rutrum maximus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus malesuada egestas. Phasellus pulvinar vulputate urna in tempor. In vel sapien ullamcorper, condimentum ipsum ut, porttitor turpis. Nam auctor erat sed lectus tempus euismod. Nunc ipsum quam, condimentum ac bibendum sit amet, sodales nec metus.</p>
-
-<p>Vivamus a ullamcorper ipsum. Donec dictum eleifend massa, rhoncus consequat sem tempor nec. Ut bibendum luctus gravida. Nullam eleifend laoreet quam, nec tincidunt dolor tincidunt non. Aenean vel magna massa. Pellentesque sit amet tincidunt ante. Nulla posuere varius elit eu consequat. Sed vitae tortor scelerisque lacus eleifend condimentum. Nulla vitae neque sed lorem sagittis pretium eu nec est. Aliquam in euismod risus, vel vulputate orci.</p>
-
-<p>Praesent sit amet auctor justo. Suspendisse pretium rutrum vehicula. Cras ut porta urna. Morbi massa odio, eleifend vitae dictum eget, mattis nec metus. Praesent pellentesque metus eu massa pharetra facilisis. Suspendisse potenti. Vestibulum pellentesque pharetra tristique. Nam ut lobortis felis. Proin sit amet consequat ipsum. Curabitur et mattis justo, sit amet feugiat lectus. Sed eleifend eget arcu non pretium. Suspendisse rhoncus erat quis leo laoreet rhoncus. Aliquam quis metus vitae enim cursus sodales. In euismod tortor id odio fermentum, non pretium ipsum iaculis. Quisque consectetur elementum nisi, et posuere odio vulputate ac. Ut consequat, velit eget fermentum ultrices, ligula odio fringilla diam, sit amet accumsan elit velit tempus dolor.</p>
-
-        </div>
-    </div>
-</div>
-
 
 <div class="pagination">
   
-  <span class="page_number ">Page: 1 of 2</span>
+  <span class="page_number ">Page: 1 of 3</span>
   
-    <a class="btn btn-default" href="/jekyll-clean/page2" class="next">Older</a>
+    <a class="btn btn-default" href="/page2" class="next">Older</a>
   
 </div>
 

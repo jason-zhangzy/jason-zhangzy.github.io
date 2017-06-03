@@ -71,14 +71,76 @@
 
         </div>
         <div class="col-md-9">
+          <div class="article">
             <div class="well">
-    <h1>About me</h1>
-    <p>Hello, I am me.</p>
+                <h1><a href="/2017/06/my-first">Jun 3, 2017 - 老张的第一个blog</a></h1>
+            
+            <div class="post-content">
+            <h5 id="1-验证指定id的签章">1. 验证指定ID的签章</h5>
+<ol>
+  <li>请求地址：http://xxx.com/ecs/open/verifyESealByID.jspa</li>
+  <li>请求方式：POST</li>
+  <li>请求参数：</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">参数名</th>
+      <th style="text-align: center">类型</th>
+      <th style="text-align: right">是否必需</th>
+      <th style="text-align: right">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">strFileData</td>
+      <td style="text-align: center">String</td>
+      <td style="text-align: right">Y</td>
+      <td style="text-align: right">待盖章的PDF文档的Base64数据</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">strESealID</td>
+      <td style="text-align: center">String</td>
+      <td style="text-align: right">Y</td>
+      <td style="text-align: right">签章ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>4.返回结果</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="nt">"meta"</span><span class="p">:{</span><span class="w">
+	        </span><span class="nt">"code"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+           </span><span class="nt">"message"</span><span class="p">:</span><span class="s2">"操作成功"</span><span class="w">
+	 </span><span class="p">}</span><span class="w"> 
+	 </span><span class="s2">"data"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+	        </span><span class="nt">"签章id"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="err">//验证失败</span><span class="w"> 
+       </span><span class="err">}</span><span class="w">
+	 
+	 
+  </span><span class="p">}</span><span class="w">
+</span></code></pre>
 </div>
 
+
+            </div>
+            
+            </div>
+          </div>
+          <img src="https://img1.doubanio.com/lpic/s29449618.jpg"  alt="上海鲜花港 - 郁金香" />
+          <div class="pagination">
+              
+              
+                <a class="btn btn-default" href="/2014/08/jekyll-clean-theme" class="previous">Older Post</a>
+              
+          </div>
         </div>
     </div>
 </div>
+
+
 
 <div class="container-fluid">
     <div class="row-fluid">
