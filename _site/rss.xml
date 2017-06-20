@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-        <title>Jekyll Jacman</title>
-        <description>Jekyll Jacman - yitao</description>
+        <title>Jason blog</title>
+        <description>Jason blog - Jason</description>
         <link></link>
         <atom:link href="" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Sun, 11 Jun 2017 18:49:03 +0800</lastBuildDate>
-        <pubDate>Sun, 11 Jun 2017 18:49:03 +0800</pubDate>
+        <lastBuildDate>Tue, 20 Jun 2017 17:20:33 +0800</lastBuildDate>
+        <pubDate>Tue, 20 Jun 2017 17:20:33 +0800</pubDate>
         <ttl>60</ttl>
 
 

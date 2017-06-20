@@ -28,8 +28,8 @@ defaults:
 paginate: 20
 
 #### Site
-title : Jekyll Jacman
-tagline: A fresh looking and responsive theme for Jekyll
+title : Jason blog
+tagline: 幸福=现实-欲望
 assets: /assets
 baseurl:
 
@@ -38,9 +38,9 @@ language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
 
 #### Menu
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
+  首页: /
+  归档: /archives
+  关于: /about
 ## you can create `tags` and `categories` folders (I had created them already).
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -83,8 +83,8 @@ share_to: true #enable share-to buttons if true
 
 #### Author information
 author:
-  name: yitao      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
+  name: Jason      ## e.g. wuchong Author name
+  intro_line1:  "Here ,I'm Jason Home Page,Welcom."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
@@ -114,7 +114,7 @@ links:
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.       website: http://duoshuo.com
-disqus_shortname:     ## e.g. wuchong   your disqus short name.        website: http://disqus.com
+disqus_shortname:  jasonblog   ## e.g. wuchong   your disqus short name.        website: http://disqus.com
 hypercomments_id:     ## e.g. 91510     your hypercomments widget id.  website: http://hypercomments.com
 ## set only one of them
 ## duoshuo will be shutting down on June 1, 2017
